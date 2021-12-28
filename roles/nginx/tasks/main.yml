@@ -1,7 +1,6 @@
 ---
 # tasks file for nginx
-## Install for Centos
-
+## Установка nginx для Centos
 - name: Install nginx for Centos 
   yum:
     name: nginx
@@ -9,9 +8,7 @@
   when:
     ansible_os_family == "RedHat"
 
-
-## Install for Debian/Ubuntu
-
+## Установка nginx для Debian/Ubuntu
 - name: Install nginx Debian/Ubuntu
   apt:
     update_cache: yes
@@ -20,18 +17,19 @@
   when:
     ansible_os_family == "Debian"
 
-
+## Шаблон конфигурации NGINX
 - name: Template for NGINX
   template:
       src: nginx.j2
       dest: /etc/nginx/nginx.conf
-      
+
+## Шаблон конфигурации виртуального домена      
 - name: Templte for domain
   template:
       src: mydomain.j2
       dest: /etc/nginx/conf.d/mydomain.conf
 
-
+## Создание директории виртуального домена
 - name: Create folder for domain site
   file:
     path: /var/www/{{ virtual_domain }}
@@ -40,6 +38,7 @@
     mode: '0755'
     state: directory
 
+## Копирование файла в дерикторию сайта
 - name: Copy file home-site.local
   copy:
     src: index.html
