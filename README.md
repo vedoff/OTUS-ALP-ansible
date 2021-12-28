@@ -41,5 +41,5 @@
    http://192.168.56.211:8088 \
    http://192.168.56.214:8088
 ### Полезно:
-https://docs.ansible.com/ansible/latest/user_guide/index.html
+https://docs.ansible.com/ansible/latest/user_guide/index.html \
 https://ansible-for-network-engineers.readthedocs.io/ru/latest/book/01_basics/index.html
