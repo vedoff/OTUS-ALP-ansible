@@ -45,4 +45,5 @@
 https://docs.ansible.com/ansible/latest/user_guide/index.html \
 https://ansible-for-network-engineers.readthedocs.io/ru/latest/book/01_basics/index.html \
 https://d2c.io/ru/article/how-to/rasshiryaem-funkcional-ansible-s-pomoshhyu-plaginov-chast-1 \
-http://onreader.mdl.ru/MasteringAnsible2nd/content/Ch01.html#03
+http://onreader.mdl.ru/MasteringAnsible2nd/content/Ch01.html#03 \
+https://galaxy.ansible.com/home
