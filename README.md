@@ -40,3 +40,5 @@
    - Проверка доступа сайта \
    http://192.168.56.211:8088 \
    http://192.168.56.214:8088
+### Полезно:
+https://docs.ansible.com/ansible/latest/user_guide/index.html
