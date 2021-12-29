@@ -39,7 +39,7 @@
    vagrant ssh server-01-centos \
    vagrant ssh server-02-debian
    - Проверка портов и enabled nginx\
-   sudo ss -tunlp
+   sudo ss -tunlp \
    sudo systemctl is-enabled nginx
    - Проверка доступа сайта \
    http://192.168.56.211:8088 \
