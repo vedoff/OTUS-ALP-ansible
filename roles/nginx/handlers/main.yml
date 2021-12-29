@@ -9,7 +9,7 @@
 - name: start nginx
   systemd:
     name: nginx
-    enable: yes
+    enabled: yes
     state: started
 
 - name: nginx reload service

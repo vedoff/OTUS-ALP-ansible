@@ -6,6 +6,8 @@
     state: latest
   when:
     ansible_os_family == "RedHat"
+  notify:
+    - start nginx
 
 ## Установка nginx для Debian/Ubuntu
 - name: Install nginx Debian/Ubuntu
@@ -15,3 +17,5 @@
     state: latest
   when:
     ansible_os_family == "Debian"
+  notify:
+    - start nginx
